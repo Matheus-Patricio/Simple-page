@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: jetbrains mono, system-ui;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: white;
+  height: 80px;
+}
+
+header #navBar {
+  display: flex;
+  padding: 0 2rem;
+  margin: 0 auto;
+  max-width: 1400px;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+header #navBar .navName {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+header #navBar .navlist{
+  text-decoration: none;
+  color: #333;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 31px;
+
+}
+
+
+header #navBar .navlist .navlink a{
+  font-size: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 700
+  ;
+}
+
+header #navBar .navlist .navlink a:hover {
+  color: #0050b9;
+  transition: color 0.5ms;
+}
+
+header #navBar .menu {
+  display: none;
+}
+
+
+main {
+  margin-top:3rem;
+}
+
+main #banner {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+main #banner .bannerContent .bannerContentTittle {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+main #banner .bannerContent .bannerContentParagraph {
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 24px;
+  max-width: 900px;
+}
+
+main #banner .bannerContent .bannerButton {
+  padding: 1rem;
+  color: #ffffff;
+  background-color: #232FE7;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 2rem;
+  align-items: center;
+}
+main #banner .bannerContent .bannerButtonResume {
+  padding: 1rem;
+  color: #ffffff;
+  background-color: #232FE7;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+
+main #banner .bannerContent .bannerButton:hover {
+  background-color:#404bed;
+  transition: 1000ms;
+}
+
+main #banner .bannerContent .bannerButtonResume:hover {
+  background-color:#404bed;
+  transition: 1000ms;
+}
+main #banner .bannerContentImage {
+  width: 300px;
+  height: auto;
+}
+
+section#workPosts {
+  background-color: #e6e7f4;
+  margin-top: 70px; 
+}
+
+#workPosts .postsContent{
+  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#workPosts .postsContent .postContentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#workPosts .postsContent .postContentHeader .workPostsTittle {
+  font-size: 22px;
+  font-weight:bold ;
+}
+
+
+
+#workPosts .postsContent .postContentHeader .viewAll {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+#workPosts .postsContent .postContentHeader .viewAll:hover {
+  color:#0050b9;
+  transition: 0.5ms;
+}
+
+#workPosts .postsContent .postcards  {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+#workPosts .postsContent .postcards .postcard {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 5px;
+
+}
+
+#workPosts .postsContent .postcards .postcard h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+#workPosts .postsContent .postcards .postcard span {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 25px;
+  color:#5f5f5f;
+}
+
+#workPosts .postsContent .postcards .postcard p {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+#workPosts .postsContent .postcards .postcard img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+
+  main #banner .bannerContent {
+    text-align: center;
+  }
+}
+
+@media (max-width:920px) {
+  #workPosts .postsContent .postcards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:920px) {
+  header #navBar .menu {
+    display: block;
+  }
+  header #navBar .navlist {
+    display: none;
+  }
+}
